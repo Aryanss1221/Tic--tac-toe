@@ -1,1 +1,68 @@
-# Tic--tac-toe
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f48fb1, #ec407a); /* Pink Gradient Background */
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcccb; /* Light Pink for Cells */
+  border: 2px solid #f06292;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #f8bbd0; /* Hover Effect */
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+/* Style for X and O */
+.cell.X {
+  color: #d32f2f; /* Red Color for X */
+  font-family: "Comic Sans MS", cursive;
+}
+
+.cell.O {
+  color: #388e3c; /* Green Color for O */
+  font-family: "Comic Sans MS", cursive;
+}
+
+#winner {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+#restartButton {
+  padding: 10px 20px;
+
+
